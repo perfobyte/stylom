@@ -34,7 +34,7 @@ export var
 
     CONDITION_NODE = 19, // (a>10)
     // inside:
-    COMPARISON_OPERATOR_NODE = 20, // "<", ">", "<=", ">=", "="
+    COMPARISON_OPERATOR_NODE = 20, // "<", ">", "<=", ">=", "=", ":"
     
     FUNCTION_CALL_NODE = 21, // function()
 
@@ -96,7 +96,7 @@ export var
 
     MATH_OPERATOR_NODE = 71, // "+", "-", "*", "/"
     
-    COMBINATOR_TOKEN_NODE = 72, // [" ", ">", "+", "~", "||"],
+    COMBINATOR_TOKEN_NODE = 72, // [" ", ">", "+", "~", "||", "|"],
     VARIABLE_DEFINITION_NODE = 73,
     IMPORTANT_NODE = 74,
 
