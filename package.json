@@ -10,9 +10,28 @@
     "type": "git",
     "url": "git+https://github.com/perfobyte/stylom.git"
   },
-  "license": "ISC",
+  "license": "MIT",
+
+  "keywords": [
+    "css",
+    "parser",
+    "ast",
+    "stylesheet"
+  ],
+
   "author": "perfobyte" ,
   "type": "module",
+
   "main": "1.js",
-  "scripts": {}
+  "module": "1.js",
+
+  "exports": {
+    ".": {
+      "import": "./1.js"
+    }
+  },
+
+  "files": [
+    "1.js"
+  ]
 }
