@@ -92,24 +92,28 @@ Properties:
 
 ---
 
-### Node Types:
+### Node Types
 
-STYLESHEET_NODE        0
-WHITESPACE_NODE        1
-COMMENT_NODE           2
-SELECTOR_NODE          3
-DECLARATION_KEY_NODE   4
-DECLARATION_VALUE_NODE 5
-BLOCK_NODE             6
-SEPARATOR_NODE         7
+| Constant                | Value |
+|------------------------:|:-----:|
+| STYLESHEET_NODE         |   0   |
+| WHITESPACE_NODE         |   1   |
+| COMMENT_NODE            |   2   |
+| SELECTOR_NODE           |   3   |
+| DECLARATION_KEY_NODE    |   4   |
+| DECLARATION_VALUE_NODE  |   5   |
+| BLOCK_NODE              |   6   |
+| SEPARATOR_NODE          |   7   |
 
 ---
 
-### Utility exports:
+### Utility Exports
 
-WHITESPACE
-DEFINITION_OF_VALUE
-NodeType
+| Name                | Description                                |
+|---------------------|--------------------------------------------|
+| WHITESPACE          | Whitespace characters used during parsing  |
+| DEFINITION_OF_VALUE | Characters that trigger value parsing      |
+| NodeType            | Same constants grouped in one object       |
 
 ---
 
