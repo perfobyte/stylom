@@ -1,4 +1,7 @@
 import * as f from './f/i.js';
+import {
+    SEPARATOR_NODE,
+} from './f/i.js';
 
 function Node(
     type,
@@ -12,6 +15,8 @@ function Node(
     
     this.children = children;
     this.parent = parent;
+
+    this.to_string = (this.to_string_map)[type];
 };
 
 Node.prototype = f;

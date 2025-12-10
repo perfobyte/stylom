@@ -1,109 +1,15 @@
 
 export var
     STYLESHEET_NODE = 0,
-    BLOCK_NODE = 1, // {}
-
-    AT_RULE_NAME_NODE = 2, // @import
+    WHITESPACE_NODE = 1,
+    COMMENT_NODE = 2,
 
     SELECTOR_NODE = 3,
-    // inside:
-    TYPE_SELECTOR_NODE = 4, // div
-    CLASS_SELECTOR_NODE = 5, // .foo
-    ID_SELECTOR_NODE = 6, // #bar
-
-    ATTRIBUTE_NODE = 7, // []
-    // inside:
-    ATTRIBUTE_KEY_NODE = 8,
-    ATTRIBUTE_WITHOUT_QUOTES_VALUE_NODE = 9,
-    ATTRIBUTE_FLAG_NODE = 10, // "i", "s"
-
     
-    WHITESPACE_NODE = 11, //
+    DECLARATION_KEY_NODE = 4,
+    DECLARATION_VALUE_NODE = 5,
 
-    DECLARATION_KEY_NODE = 12, // ex: "color"
+    BLOCK_NODE = 6,
 
-    COMMENT_NODE = 13, // /**/
-    HTML_COMMENT_NODE = 14, // <!-- -->
-
-    PSEUDO_CLASS_SELECTOR_NODE = 15, // :hover, :nth-child(), :is()
-    PSEUDO_ELEMENT_SELECTOR_NODE = 16, // ::before, ::after, ::marker
-
-    UNIVERSAL_SELECTOR_NODE = 17, // *
-    
-    LOGICAL_OPERATOR_NODE = 18, // and, or, not
-
-    CONDITION_NODE = 19, // (a>10)
-    // inside:
-    COMPARISON_OPERATOR_NODE = 20, // "<", ">", "<=", ">=", "=", ":"
-    
-    FUNCTION_CALL_NODE = 21, // function()
-
-    IDENT_NODE = 22, // ids: auto, flex, red...
-    DOUBLE_QUOTES_STRING_NODE = 23, // "text",
-    SINGLE_QUOTES_STRING_NODE = 24, // 'text'
-    INTEGER_NUMBER_NODE = 25, // 1, -10
-    DOUBLE_NUMBER_NODE = 26, // 0.5
-    PERCENTAGE_NODE = 27, // 50%
-
-    PIXEL_DIMENSION_NODE = 28, // 10px
-    REM_DIMENSION_NODE = 29, // 10rem
-    SECONDS_DIMENSION_NODE = 30, // 2s,
-    MILISECONDS_DIMENSION_NODE = 31, // 200ms,
-
-    DEGREE_DIMENSION_NODE = 32, // 45deg
-    RAD_DIMENSION_NODE = 33,
-    GRAD_DIMENSION_NODE = 34,
-    TURN_DIMENSION_NODE = 35,
-
-    HZ_DIMENSION_NODE = 36,
-    KHZ_DIMENSION_NODE = 37,
-
-    DPI_DIMENSION_NODE = 38,
-    DPCM_DIMENSION_NODE = 39,
-    DPPX_DIMENSION_NODE = 40,
-    FR_DIMENSION_NODE = 41,
-
-    HASH_NODE = 42, // #fff, #ff00ff
-    UNICODE_RANGE_NODE = 43, // U+00-FF в @font-face
-
-    MM_DIMENSION_NODE = 44,
-    Q_DIMENSION_NODE = 45,
-    IN_DIMENSION_NODE = 46,
-    PC_DIMENSION_NODE = 47,
-    PT_DIMENSION_NODE = 48,
-    EM_DIMENSION_NODE = 49,
-    EX_DIMENSION_NODE = 50,
-    CH_DIMENSION_NODE = 51,
-    IC_DIMENSION_NODE = 52,
-    LH_DIMENSION_NODE = 53,
-    RLH_DIMENSION_NODE = 54,
-    VW_DIMENSION_NODE = 55,
-    VH_DIMENSION_NODE = 56,
-    VMIN_DIMENSION_NODE = 57,
-    VMAX_DIMENSION_NODE = 58,
-    SVW_DIMENSION_NODE = 59,
-    SVH_DIMENSION_NODE = 60,
-    LVW_DIMENSION_NODE = 61,
-    LVH_DIMENSION_NODE = 62,
-    DVW_DIMENSION_NODE = 63,
-    DVH_DIMENSION_NODE = 64,
-    SVI_DIMENSION_NODE = 65,
-    SVB_DIMENSION_NODE = 66,
-    LVI_DIMENSION_NODE = 67,
-    LVB_DIMENSION_NODE = 68,
-    DVI_DIMENSION_NODE = 69,
-    DVB_DIMENSION_NODE = 70,
-
-    MATH_OPERATOR_NODE = 71, // "+", "-", "*", "/"
-    
-    COMBINATOR_TOKEN_NODE = 72, // [" ", ">", "+", "~", "||", "|"],
-    VARIABLE_DEFINITION_NODE = 73,
-    IMPORTANT_NODE = 74,
-
-    AT_RULE_NODE = 75,
-    DECLARATION_NODE = 76,
-    DECLARATION_VALUE_NODE = 77,
-    VARIABLE_REFERENCE_NODE = 78,
-
-    ATTRIBUTE_OPERATOR_NODE = 79 // "=", "~=", "^=", "$=", "*=", "|="
+    SEPARATOR_NODE = 7
 ;

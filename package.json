@@ -1,0 +1,18 @@
+{
+  "name": "@perfobyte/stylom",
+  "version": "1.0.0",
+  "description": "CSS parser for all",
+  "homepage": "https://github.com/perfobyte/stylom#readme",
+  "bugs": {
+    "url": "https://github.com/perfobyte/stylom/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/perfobyte/stylom.git"
+  },
+  "license": "ISC",
+  "author": "perfobyte" ,
+  "type": "module",
+  "main": "1.js",
+  "scripts": {}
+}
